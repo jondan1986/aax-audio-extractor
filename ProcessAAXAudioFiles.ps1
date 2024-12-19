@@ -1,8 +1,8 @@
 # Set the path to the directory containing the .aax files
-$aaxDirectory = "e:\YotoBooks\" # Replace with the actual path
+$aaxDirectory = ".\" # Replace with the actual path
 
 # Set the path to the ExtractAAXChapters.ps1 script
-$scriptPath = "e:\YotoBooks\ps\ExtractAAXChapters.ps1"
+$scriptPath = ".\ExtractAAXChapters.ps1"
 
 # Find all .aax files in the specified directory and store them in a list
 $aaxFiles = Get-ChildItem -Path $aaxDirectory -Filter "*.aax" | Where-Object {$_.Extension -eq ".aax"}

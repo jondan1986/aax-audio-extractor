@@ -65,7 +65,7 @@ else {
     Write-Warning "No chapters found in the file."
 }
 
-#Extract full size thumbnail and 16x16 for Yoto Player and store it into new folder
+#Extract full size thumbnail and 16x16 for Y*** Player and store it into new folder
 New-Item -ItemType Directory -Path $ArtworkFolder -Force | Out-Null
 $outfile = Join-Path $ArtworkFolder "thumbnail%03d.jpeg"
 & ffmpeg -y -activation_bytes $activation_bytes -i $filename -v quiet -stats -f image2 -frames:v 1  $outfile
